@@ -46,7 +46,7 @@
             {{ if isset .Params "author" }}
                 {{ $author := index .Site.Data.authors .Params.author }}
                 <img src="{{ $author.image}}" /><br>
-                <a href="/authors/{{ $author.pagelink }}">{{ $author.name }}</a>
+                <a href="/հեղինակ/{{ $author.pagelink }}">{{ $author.name }}</a>
             {{ else }}
             {{ end }}
 
