@@ -4,7 +4,7 @@
 
 <h1 class="screen-reader-text">Posts</h1>
 <div id="loop-container" class="loop-container">
-  {{ range $index, $element := (where .Data.Pages "Section" "հոսք") }}
+  {{ range $index, $element := (where .Data.Pages "Section" "in" (slice "հոսք" "յօդուածներ" "պատմութիւններ") ) }}
 	{{ if and (isset .Params "image") .Params.image }}
 	{{ if eq (mod $index 2) 0 }}
 	<div class="post type-post status-publish format-standard has-post-thumbnail hentry category-design tag-memories tag-normal-post tag-standard-2 excerpt zoom full-without-featured odd excerpt">
@@ -53,7 +53,7 @@
 								<article>
 									{{ .Summary }}
 
-									<div class="more-link-wrapper"><a class="more-link" href="{{ .Permalink }}">Read the post<span class="screen-reader-text">This is a Standard Post</span></a></div>
+									<div class="more-link-wrapper"><a class="more-link" href="{{ .Permalink }}">Շարունակութիւնը<span class="screen-reader-text">This is a Standard Post</span></a></div>
 								</article>
 							</div>
 						</div>
