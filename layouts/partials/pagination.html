@@ -4,7 +4,7 @@
 	<h2 class="screen-reader-text">Posts navigation</h2>
 	<div class="nav-links">
 		{{ if $pag.HasPrev }}
-			<a class="prev page-numbers" href="{{ $pag.Prev.URL }}">Previous</a>
+			<a class="prev page-numbers" href="{{ $pag.Prev.URL }}">Նախորդը</a>
 		{{ end }}
 			{{ $.Scratch.Set "__paginator.ellipsed" false }}
 			{{ range $pag.Pagers }}
