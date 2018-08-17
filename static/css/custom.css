@@ -39,7 +39,7 @@ Tracks is distributed under the terms of the GNU GPL
 .menu-primary-items a, .excerpt-meta, .entry-meta, .excerpt-title, .entry-title, .more-link, .pagination, .further-reading,
 .entry-categories,
 .entry-tags, .author-meta .author span, .comments-number h2, .comment-author .author-name, .site-footer h1, .design-credit, .widget-title, .widget li, .menu-footer-items a, .menu-secondary-items a {
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: 0.08em;
   font-weight: 700;
 }
@@ -55,6 +55,18 @@ background-color: gray;
 background-image: linear-gradient(90deg, transparent 99%, rgba(255,255,255,.5) 0%);
 background-size: 11.1%; /* This is at 6-columns -> just change this # */
 /*===== Basic Styles =====*/
+/* սահմանում եմ հիմնական տառատեսակը */
+@font-face {
+    font-family: 'Arian AMU';
+    src: url('http://norayr.am/weblog/arnamu.ttf');
+	font-weight: normal
+}
+@font-face {
+    font-family: 'Arian AMU';
+    src: url('http://norayr.am/weblog/arnamu_bold.ttf');
+	font-weight: bold
+}
+
 /* apply a natural box layout model to all elements */
 *, *:before, *:after {
   box-sizing: border-box;
@@ -62,10 +74,10 @@ background-size: 11.1%; /* This is at 6-columns -> just change this # */
 
 body {
   height: 100%;
-  font-size: 100%;
+  font-size: 90%;
   margin: 0;
   padding: 0;
-  font-family: "raleway", sans-serif;
+  font-family: "Arian AMU", sans-serif;
   line-height: 1.5;
   color: #4d4d4d;
   background: #38312f;
@@ -118,7 +130,7 @@ article a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "raleway", sans-serif;
+  font-family: "Arian AMU", sans-serif;
   margin: 0;
   padding: 0;
   font-weight: 400;
@@ -310,7 +322,7 @@ textarea {
   min-height: 45px;
   outline: solid 1px #000;
   border: none;
-  font-family: "raleway", sans-serif;
+  font-family: "Arian AMU", sans-serif;
   font-size: 0.813em;
   line-height: 1.85;
   border-radius: 0;
@@ -333,7 +345,7 @@ input[type="submit"] {
   min-height: 45px;
   outline: none;
   border: none;
-  font-family: "raleway", sans-serif;
+  font-family: "Arian AMU", sans-serif;
   font-size: 0.813em;
   line-height: 1.85;
   border-radius: 0;
@@ -382,7 +394,7 @@ a img {
   top: -4.5em;
   z-index: 19;
   font-weight: 700;
-  text-transform: uppercase;
+  text-transform: lowercase;
   letter-spacing: 0.08em;
 }
 .skip-content:active, .skip-content:focus {
@@ -854,7 +866,7 @@ a img {
   left: 0;
   right: 0;
   margin: 0 auto;
-  bottom: -1.5em;
+  bottom: -1em;
 }
 
 .excerpt-content {
@@ -1654,7 +1666,7 @@ li.pingback:first-child {
 
 .archive-header {
   padding: 1.5em 0;
-  text-transform: uppercase;
+  text-transform: lowercase;
   color: #8c8c8c;
 }
 .archive-header span {
@@ -2283,7 +2295,7 @@ li.pingback:first-child {
 .gallery-caption {
   color: #8c8c8c;
   display: block;
-  font-family: "raleway", sans-serif;
+  font-family: "Arian AMU", sans-serif;
   font-size: 12px;
   padding: 0.5em 0;
 }
@@ -2682,7 +2694,7 @@ li.pingback:first-child {
   min-height: 45px;
   outline: none;
   border: none;
-  font-family: "raleway", sans-serif;
+  font-family: "Arian AMU", sans-serif;
   font-size: 0.813em;
   line-height: 1.85;
   border-radius: 0;
